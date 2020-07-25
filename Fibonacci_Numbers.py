@@ -1,0 +1,1 @@
+#input number of elements you want to show in the sequencen=int(input("Enter the number of terms for Fibonacci sequence: "))#first two elementsfseq=[0, 1]if n==1:    print(fseq[0])elif n==2:    print(fseq[0],fseq[1])else:    a = fseq[0]; b = fseq[1];    for i in range(2,n):        fseq.append(a+b)        temp=a+b        a=b        b=temp    print(*fseq)
